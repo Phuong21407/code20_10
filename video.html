@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 20/10</title>
+    <style>
+        #myButton {
+   /* Các thuộc tính CSS để định dạng nút */
+   background-color: #f66;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size:16px;
+   border-color: #f66;
+   border-radius: 20px;
+   position: absolute;
+   top: 85%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+   }
+       #myButton:hover{
+           background-color: #EA4C89;
+       }
+       .linkButton {
+       color: aliceblue;
+       text-decoration: none;
+   }
+       .linkButton:hover{      
+       font-size: 1.2em;
+   }
+   </style>
+</head>
+<body>
+    <video src="img/vid.mp4.mp4" height="100%" width="100%" controls autoplay></video>
+    <div>
+        <button id="myButton" style="display: none;" ><a href="rainlove.html" class="linkButton">Next Page</a></button>
+    </div>
+</body>
+<script>
+    /* JavaScript ở đây */
+    const button = document.getElementById('myButton');
+
+// Hiển thị nút sau 3 giây (3000 mili giây)
+setTimeout(() => {
+button.style.display = 'block';
+}, 51000);
+</script>
+</html>
